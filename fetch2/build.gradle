@@ -48,7 +48,7 @@ android {
 dependencies {
 
     implementation "androidx.room:room-runtime:$room_version"
-    kapt("androidx.room:room-compiler:2.6.1") {
+    kapt("androidx.room:room-compiler:$room_version") {
         exclude group: 'androidx.room', module: 'room-compiler'
     }
     api project(':fetch2core')
